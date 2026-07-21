@@ -1,25 +1,111 @@
-<!DOCTYPE html>
-<html lang="hu">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <title>Grafana Dashboard Beágyazva</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    iframe {
-      width: 100%;
-      height: 90vh;
-      border: none;
-    }
-  </style>
+<title>ModBUS ipari hálózatok - távmérés - távfelügyelet - telemetria - smart megoldások</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Expires" content="Mon, 1 Jan 1997 08:00:00 GMT" />
+<meta http-equiv="Cache-Control" content="post-check=0, pre-check=0" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="content-language" content="hu" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="5 days" />
+<meta name="description" content="ModBUS ipari hálózatok - SCADA - távmérés - távfelügyelet - fejlesztés - tervezés - kivitelezés - smart megoldások" />
+<meta name="keywords" content="modbus , TCP , RTU , SCADA , ASCII , RS232 , RS485 , modbus.hu , telemetria , távmérés , távfelügyelet , smart meter , smart grid , hiba" />
+<meta name="google-site-verification" content="saoEVdszv9a2VStGSxHanU38EHI6zJV072WJik8OKP4" />
 </head>
-<body>
-  <h1><img src="logo.png" width="150px">              Grafana DEMO Dashboard</h1>
-<iframe src=http://dev.onergy.hu:3000/d/633fb52e-bede-4656-809d-2486dc365456/on-energy-demo-kezdolap?orgId=2&from=now-12h&to=now&timezone=browser&refresh=1m&kiosk></iframe>
+
+<body style="color: rgb(21, 7, 0); background-color: rgb(140, 210, 110);" alink="#000099" link="#000099" vlink="#3DB5DD">
+<div align="center">
+<table border="0" width="950">
+    <tr>
+        <td width="144"><img src="logo_1.png" width="150" height="50" border="0"></td>
+        <td width="462">
+            <p align="center"><font size="5"></font>
+			<b><i><font face="Tahoma"><span style="font-size:28pt;">ModBUS<br>hálózatok - eszközök</span></font></i></b><font size="5"></font></p>
+        </td>
+        <td width="144"><img src="logo_1.png" width="150" height="50" border="0"></td>
+    </tr>
+</table>
+<table border="0" width="950">
+        <td width="950">
+<hr size="1" width="950" align="center" />
+<table border="0" align="center">
+  <tr>
+    <td><a href="alapok.html"><input type="image" src="alapok.jpg" border="1" height="50"></a></td>
+	<td width="70"></td>
+    <td><a href="scada.html"><input type="image" src="scada.jpg" border="1" height="50"></a></td>
+	<td width="70"></td>
+	<td><a href="tavmeres.html"><input type="image" src="tavmeres.jpg" border="1" height="50"></a></td>
+	<td width="70"></td>
+	<td><a href="gateway.html"><input type="image" src="gateway.jpg" border="1" height="50"></a></td>
+	<td width="70"></td>
+	<td><a href="gyik.html"><input type="image" src="gyik.jpg" border="1" height="50"></a></td>	
+  </tr>
+</table>  
+<hr size="1" width="950" align="center" />
+<p align="center"><font face="Tahoma"><span style="font-size:14pt;">ModBUS hálózati probléma adódott?<br>
+Nincs, vagy instabil a kommunikáció?<br>
+Távmérést kellene megvalósítani ipari buszhálózaton, etherneten?<br>
+Nem érkeznek be az adatok?<br>
+Nem jön össze egy távoli kapcsolat?</p>
+        <hr size="1" width="950" align="center" />
+<p align="center"><font size="5"><b>Ha szükség lenne némi támogatásra...</b></font></p>
+<p align="center"><font face="Tahoma"><span style="font-size:14pt;">A téma iránt érdeklődőknek néhány alapvető információ megtalálható a fenti gombokra kattintva.</font></p>
+        <hr size="1" width="950" align="center" />
+<p align="center"><font size="5" face="Tahoma"><b>Kérdések esetén…</b></p>
+<p align="center"><font face="Tahoma"><span style="font-size:14pt;">Egy-egy ModBUS kommunikációs feladat kivitelezése, illetve probléma elhárítása sok esetben csak gyakorlati tapasztalattal lehetséges. A még megoldatlan kérdéseket az <a href="mailto:support@modbus.hu">support@modbus.hu</a> email címen, vagy alább a Kapcsolatfelvétel űrlapon lehet feltenni.<br></font></p>
+       
+        <hr size="1" width="950" align="center" />
+        </td>
+
+<table border="0" width="950">
+    <tr>
+        <td width="144" valign="top">
+            <h2><font face="Tahoma"><span style="font-size:14pt;">Nem található a hiba oka?</span></font></h2>
+            <h2> </h2>
+            <h2><font face="Tahoma"><span style="font-size:14pt;">Régóta keresgél a neten, és fogytán a türelem?</span></font></h2>
+			<h2> </h2>
+            <h2><font face="Tahoma"><span style="font-size:14pt;">Nem érkeznek be az adatok?</span></font></h2>
+			<h2> </h2>
+            <h2><font face="Tahoma"><span style="font-size:14pt;">Nem jön össze egy remote IO kapcsolat?</span></font></h2>        
+        </td>
+        
+        <td width="462" valign="top">
+
+<div><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfjyZ101fsSVBmWwSHWayiSW-sA1sU254a2vib3CKdiFPO9FA/viewform?embedded=true" width="640" height="878" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe></div>
+
+            <p> </p>
+        </td>
+        <td width="144" valign="top">
+            <h2><font face="Tahoma"><span style="font-size:14pt;">ModBUS hálózati probléma adódott?</span></font></h2>
+            <h2> </h2>
+            <h2><font face="Tahoma"><span style="font-size:14pt;">Nincs, vagy instabil a kommunikáció?</span></font></h2>
+            <h2> </h2>
+            <h2><font face="Tahoma"><span style="font-size:14pt;">Most ismerkedik a ModBUS alapokkal?</span></font></h2>
+            <h2> </h2>
+            <h2><font face="Tahoma"><span style="font-size:14pt;">Telemetria megoldást keres?</span></font></h2>
+        </td>
+    </tr>
+	
+</table>
+
+<hr size="1" width="950" align="center" />
+
+<table border="0" width="950">
+    <tr>
+        <td width="950">
+            <p align="center"><font face="Tahoma"><b><i><u>Kapcsolat:</u></i></b></font><span style="font-family:'Comic Sans MS'; font-size:12pt;"><a href="mailto:support@modbus.hu">support@modbus.hu</a></span></p>
+            
+            <p align="center"><span style="font-size:12pt;">További böngészés a <a href="http://www.google.hu/"><img src="http://www.google.com/logos/Logo_40wht.gif" 
+border="0" ALT="Google" width="75" height="31"></a> keresőben</span></p>
+        </td>
+    </tr>
+</table>
+</table>
+</div>
 </body>
 </html>
